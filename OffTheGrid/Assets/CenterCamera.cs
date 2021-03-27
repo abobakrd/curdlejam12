@@ -15,9 +15,9 @@ public class CenterCamera : MonoBehaviour
     // Update is called once per frame
     private void Start()
     {
-        camera.orthographicSize = GridBuilder.CenterPoint.x + 2;
+        camera.orthographicSize = GridBuilder.CenterPoint.x + 1;
         transform.position = GridBuilder.CenterPoint + offset;
-        plane.localScale= Vector3.one * Marker.Scale * 0.916f;
+        plane.localScale= Vector3.one * (GridBuilder.CenterPoint.x + 1) * 0.2f;
         
         
         var mat = planeRenderer.material;
