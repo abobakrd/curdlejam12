@@ -23,37 +23,37 @@ public class Marker : MonoBehaviour
 
 	public bool TryPassThrough(float playerX, float playerY, out Vector3 newPos)
 	{
-		// var pos = transform.position;
-		// var xPos = pos.x * Scale;
-		// var yPos = pos.y * Scale;
-		//
-		// if (playerX == xPos - Scale && playerY == yPos)
-		// {
-		// 	newPos = new Vector3(playerX + distance, playerY);
-		// 	return true;
-		// }
-		// if (playerX == xPos + Scale && playerY == yPos)
-		// {
-		// 	newPos = new Vector3(playerX - distance, playerY);
-		// 	return true;
-		// }
-		// if (playerY == yPos - Scale && playerX == xPos)
-		// {
-		// 	newPos = new Vector3(playerX, distance + playerY);
-		// 	return true;
-		// }
-		// if (playerY == yPos + Scale && playerX == xPos)
-		// {
-		// 	newPos = new Vector3(playerX, playerY - distance);
-		// 	return true;
-		// }
+		var pos = transform.position;
+		var xPos = pos.x;
+		var yPos = pos.y;
+		
+		if (playerX == xPos - Scale && playerY == yPos)
+		{
+			newPos = new Vector3(playerX + distance, playerY);
+			return true;
+		}
+		if (playerX == xPos + Scale && playerY == yPos)
+		{
+			newPos = new Vector3(playerX - distance, playerY);
+			return true;
+		}
+		if (playerY == yPos - Scale && playerX == xPos)
+		{
+			newPos = new Vector3(playerX, distance + playerY);
+			return true;
+		}
+		if (playerY == yPos + Scale && playerX == xPos)
+		{
+			newPos = new Vector3(playerX, playerY - distance);
+			return true;
+		}
 		newPos = default;
 		return false;
 	}
 
 	public void OnMouseDown()
 	{
-		if (TryPassThrough(Player.X * Scale, Player.Y * Scale, out var newPos))
+		if (TryPassThrough(Player.X, Player.Y, out var newPos))
 			Player.MoveTo(newPos);
 	}
 }

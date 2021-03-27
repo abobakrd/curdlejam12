@@ -12,12 +12,15 @@ public class GridBuilder : MonoBehaviour
     public GameObject goalPrefab;
     public GameObject markerPrefab;
 
+    public static int width => maze.GetLength(0);
+    public static int height => maze.GetLength(1);
+    
     private GameObject playerInstance;
     private GameObject goalInstance;
 
     private List<GameObject> markerInstances = new List<GameObject>();
 
-    private int[,] maze = new [,]
+    private static int[,] maze = new [,]
     {
         {0,0,0,0,0,0,0,8},
         {0,0,0,0,5,0,0,0},

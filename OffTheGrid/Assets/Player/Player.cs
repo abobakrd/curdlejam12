@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using DG.Tweening;
+using UnityEngine;
 public class Player : MonoBehaviour
 {
 	public static int X;
@@ -16,7 +17,7 @@ public class Player : MonoBehaviour
 
 	public static void MoveTo(Vector3 newPos)
 	{
-		tr.position = newPos;
+		tr.DOMove(newPos, 1.0f);
 		X = (int)newPos.x;
 		Y = (int)newPos.y;
 	}
