@@ -17,8 +17,10 @@ public class Player : MonoBehaviour
 
 	public static void MoveTo(Vector3 newPos)
 	{
-		tr.DOMove(newPos, 1.0f);
 		X = (int)newPos.x;
 		Y = (int)newPos.y;
+		tr.DOMove(newPos, 1.0f);
 	}
+
+	public bool Intersects(Vector3 position) => (int)position.x == X && (int)position.y == Y;
 }
