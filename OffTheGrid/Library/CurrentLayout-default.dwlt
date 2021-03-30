@@ -20,8 +20,13 @@ MonoBehaviour:
     height: 1005
   m_ShowMode: 4
   m_Title: 
+<<<<<<< HEAD
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 521}
+=======
+  m_RootView: {fileID: 5}
+  m_MinSize: {x: 875, y: 542}
+>>>>>>> origin/main
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -122,6 +127,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 413
     y: 0
+<<<<<<< HEAD
     width: 1170
     height: 955
   m_MinSize: {x: 304, y: 342}
@@ -155,6 +161,15 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &7
+=======
+    width: 773
+    height: 597
+  m_MinSize: {x: 304, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
+  vertical: 0
+  controlID: 102
+--- !u!114 &5
+>>>>>>> origin/main
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -174,9 +189,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1920
     height: 1005
   m_MinSize: {x: 875, y: 300}
+=======
+    width: 1280
+    height: 647
+  m_MinSize: {x: 875, y: 542}
+>>>>>>> origin/main
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &8
 MonoBehaviour:
@@ -241,6 +262,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1920
     height: 955
   m_MinSize: {x: 810, y: 471}
@@ -248,6 +270,15 @@ MonoBehaviour:
   vertical: 0
   controlID: 175
 --- !u!114 &11
+=======
+    width: 1280
+    height: 597
+  m_MinSize: {x: 811, y: 492}
+  m_MaxSize: {x: 22006, y: 14042}
+  vertical: 0
+  controlID: 123
+--- !u!114 &9
+>>>>>>> origin/main
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -266,6 +297,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 413
     height: 955
   m_MinSize: {x: 231, y: 471}
@@ -273,6 +305,15 @@ MonoBehaviour:
   vertical: 1
   controlID: 19
 --- !u!114 &12
+=======
+    width: 231
+    height: 597
+  m_MinSize: {x: 231, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
+  vertical: 1
+  controlID: 59
+--- !u!114 &10
+>>>>>>> origin/main
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -289,11 +330,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 413
     height: 544
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
+=======
+    width: 231
+    height: 326
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 14}
+>>>>>>> origin/main
   m_Panes:
   - {fileID: 19}
   m_Selected: 0
@@ -341,11 +390,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 529
     height: 683
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
+=======
+    width: 374
+    height: 597
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 17}
+>>>>>>> origin/main
   m_Panes:
   - {fileID: 22}
   - {fileID: 17}
@@ -608,6 +665,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 9a330000
       m_LastClickedID: 13210
       m_ExpandedIDs: 6afbfffff4ffffffe0330000ea330000ec330000
@@ -615,16 +673,29 @@ MonoBehaviour:
         m_UserAcceptedRename: 0
         m_Name: computer
         m_OriginalName: computer
+=======
+      m_SelectedIDs: 52340000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 68fbffff
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+>>>>>>> origin/main
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
+<<<<<<< HEAD
         m_UserData: -35368
+=======
+        m_UserData: 0
+>>>>>>> origin/main
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 12}
       m_SearchString: 
@@ -709,10 +780,17 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 415}
     m_SelectedIDs: b0350000
     m_LastClickedID: 13744
     m_ExpandedIDs: 0000000040350000423500004435000046350000483500004a3500004c3500004e350000503500005235000054350000563500005a3500006035000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 52340000
+    m_LastClickedID: 13394
+    m_ExpandedIDs: 0000000052340000
+>>>>>>> origin/main
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -740,7 +818,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000040350000423500004435000046350000483500004a3500004c3500004e35000050350000523500005435000056350000
+=======
+    m_ExpandedIDs: 0000000052340000
+>>>>>>> origin/main
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -771,18 +853,27 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: d44d00005c4c0000a84c00007a530000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
+<<<<<<< HEAD
       m_Name: climb
       m_OriginalName: climb
+=======
+      m_Name: 
+      m_OriginalName: 
+>>>>>>> origin/main
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
+<<<<<<< HEAD
       m_UserData: 13746
+=======
+      m_UserData: 0
+>>>>>>> origin/main
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 13}
     m_CreateAssetUtility:
