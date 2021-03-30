@@ -6,6 +6,7 @@ using UnityEngine;
 public class GridBuilder : MonoBehaviour
 {
     public static Vector3 CenterPoint;
+    public static Action OnGridBuilt;
     
     public float scale;
     public GameObject playerPrefab;
@@ -55,6 +56,8 @@ public class GridBuilder : MonoBehaviour
                     SpawnMarker(y, x, maze[x, y]);
             }
         }
+        
+        OnGridBuilt?.Invoke();
     }
 
     private void SpawnMarker(int x, int y, int distance)
