@@ -1,39 +1,36 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class UseMaze : MonoBehaviour
 {
-    BoxCollider2D coll;
-    // var maze = transform ..
+    public GameObject maze;
+    public Canvas billboard;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        coll = GetComponent<BoxCollider2D>();
-    }
+    private Camera cityCamera;
+    private Camera mazeCamera;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerStay2D(Collider2D other)
     {
+        if (!other.transform.TryGetComponent(out CharacterController _)) return;
+
+        if (Input.GetKeyDown(KeyCode.E))
+            FocusMaze();
+    }
+    private void FocusMaze()
+    {
+        maze.SetActive(true);
+        billboard.enabled = false;
+        cityCamera = Camera.main;
+        cityCamera.enabled = false;
+        mazeCamera = maze.GetComponentInChildren<Camera>();
+        mazeCamera.targetDisplay = 0;
         
+        LevelManager.CurrentLevel.OnLevelCompleted += ResetCameraView;
     }
 
-    /*private void OnTriggerEnter2D(Collider2D collision)
+    private void ResetCameraView()
     {
-        if(collision.gameObject.tag == "Player" /* && !maze.isSolved #1#)
-        {
-            Camera.main.gameObject.SetActive(false);
-            // maze.gameObject.setActive(true);
-        }
+        mazeCamera.targetDisplay = 1;
+        cityCamera.enabled = true;
+        maze.SetActive(false);
     }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if(collision.gameObject.tag == "Player")
-        {
-            Camera.main.gameObject.SetActive(true);
-            // maze.gameObject.setActive(false);
-        }
-    }*/
 }

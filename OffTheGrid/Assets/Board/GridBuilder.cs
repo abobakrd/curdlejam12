@@ -63,6 +63,7 @@ public class GridBuilder : MonoBehaviour
     private void SpawnMarker(int x, int y, int distance)
     {
         var go = Instantiate(markerPrefab, new Vector3(x * scale, y * scale), Quaternion.identity);
+        go.transform.parent = transform;
         go.GetComponentInChildren<Marker>().SetDistance(distance);
     }
 
@@ -71,6 +72,7 @@ public class GridBuilder : MonoBehaviour
         if(goalInstance != null) Destroy(goalInstance);
 
         goalInstance = Instantiate(goalPrefab, new Vector3(x * scale, y * scale), Quaternion.identity);
+        goalInstance.transform.parent = transform;
     }
 
     private void SpawnPlayer(int x, int y)
@@ -78,5 +80,6 @@ public class GridBuilder : MonoBehaviour
         if (playerInstance != null) Destroy(playerInstance);
 
         playerInstance = Instantiate(playerPrefab, new Vector3(x * scale, y * scale), Quaternion.identity);
+        playerInstance.transform.parent = transform;
     }
 }
