@@ -10,6 +10,7 @@ public class UseMaze : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
+        //TODO: Figure out why this is only firing when the player is moving
         if (!other.transform.TryGetComponent(out CharacterController _)) return;
 
         if (Input.GetKeyDown(KeyCode.E))
